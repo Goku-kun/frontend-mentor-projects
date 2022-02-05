@@ -3,7 +3,6 @@ import { normalize } from "styled-normalize";
 
 const GlobalStyle = createGlobalStyle`
   
-  @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
 
   ${normalize}
   
@@ -13,6 +12,7 @@ const GlobalStyle = createGlobalStyle`
   *::before,
   *::after {
     box-sizing: border-box;
+    font-family: Rubik, sans-serif;
   }
 
   /* Remove default margin */
@@ -81,6 +81,11 @@ const GlobalStyle = createGlobalStyle`
       transition-duration: 0.01ms !important;
       scroll-behavior: auto !important;
     }
+  }
+
+  #map {
+    height: 70vh;
+    width: 100vw;
   }
 `;
 
